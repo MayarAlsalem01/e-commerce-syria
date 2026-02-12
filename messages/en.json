@@ -1,0 +1,28 @@
+{
+    "HomePage": {
+        "bestSeller": "Best Seller",
+        "SpecialForYou": "Special For You",
+        "navbar": {
+            "home": "Home",
+            "products": "Products",
+            "settings": "settings",
+            "favorite": "Favorite"
+        }
+    },
+    "review": {
+        "title": "review"
+    },
+    "auth": {
+        "signIn": "Sign In",
+        "signUp": "Sign Up",
+        "email": "Email",
+        "password": "Password",
+        "fullName": "Full Name"
+    },
+    "cart": {
+        "title": "Cart",
+        "productName": "Product Name",
+        "totalPrice": "Total Price",
+        "quantity": "Quantity"
+    }
+}

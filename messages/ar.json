@@ -1,0 +1,27 @@
+{
+    "HomePage": {
+        "bestSeller": "أفضل المبيعات",
+        "SpecialForYou": "مخصص لك",
+        "navbar": {
+            "home": "الرئيسة",
+            "settings": "الاعدادات",
+            "favorite": "المفضلة"
+        }
+    },
+    "review": {
+        "title": "أراء"
+    },
+    "auth": {
+        "signIn": "تسجيل الدخول",
+        "signUp": "اشتراك",
+        "email": "البريد الاكتروني",
+        "password": "كلمة السر",
+        "fullName": "الأسم الكامل"
+    },
+    "cart": {
+        "title": "السلة",
+        "productName": "اسم المنتج",
+        "totalPrice": "السعر الاجمالي",
+        "quantity": "الكمية"
+    }
+}
