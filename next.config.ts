@@ -6,7 +6,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     remotePatterns: [new URL('https://tech-commerce.fractalsgroup.net/**')]
-  }
+  },
+  serverComponentsExternalPackages: ['jsdom', 'isomorphic-dompurify', 'parse5']
 };
 
 
