@@ -76,6 +76,7 @@ export default function PaginationDemo({ meta, windowSize = 2 }: Props) {
                 <PaginationItem>
                     <PaginationPrevious
                         href={buildHrefForPage(Math.max(1, current - 1))}
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                         onClick={(e: any) => {
                             e.preventDefault()
                             if (current > 1) goToPage(current - 1)
@@ -101,6 +102,7 @@ export default function PaginationDemo({ meta, windowSize = 2 }: Props) {
                                 <PaginationLink
                                     href={buildHrefForPage(p)}
                                     isActive={p === current}
+                                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                     onClick={(e: any) => {
                                         e.preventDefault()
                                         if (p !== current) goToPage(p)
@@ -116,6 +118,7 @@ export default function PaginationDemo({ meta, windowSize = 2 }: Props) {
                 <PaginationItem >
                     <PaginationNext
                         href={buildHrefForPage(Math.min(totalPages, current + 1))}
+                        // eslint-disable-next-line @typescript-eslint/no-explicit-any
                         onClick={(e: any) => {
                             e.preventDefault()
                             if (current < totalPages) goToPage(current + 1)

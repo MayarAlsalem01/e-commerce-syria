@@ -31,9 +31,3 @@ function useSidebar() {
         throw new Error('wrap with sidebar provider')
     return context
 }
-function sidebarTrigger() {
-    const {setIsOpen}=useSidebar()
-    return (
-        <Button>open</Button>
-    )
-}

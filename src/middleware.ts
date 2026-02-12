@@ -46,6 +46,7 @@ export default function middleware(req: NextRequest) {
         return intlMiddleware(req);
     } else {
         // For all other pages, run the auth middleware which then chains to i18n
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         return (authMiddleware as any)(req);
     }
 }

@@ -53,8 +53,8 @@ const cartSlice = createSlice({
         },
 
         removeFromCart: (state, action: PayloadAction<{ id?: string; productName?: string }>) => {
-            const { id, productName } = action.payload;
-            const key = id ?? productName;
+            // const { id, productName } = action.payload;
+            // const key = id ?? productName;
             state.items = state.items.filter(i => (i.id));
         },
 

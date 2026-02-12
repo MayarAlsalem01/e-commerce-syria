@@ -34,8 +34,8 @@ export default async function ProductDescrption({ product }: { product: Product 
                     product.images ? <div className='flex gap-4 justify-start'>
 
                         {
-                            product.images.map((image) => (
-                                <div className={`w-8 h-8 rounded-full `} style={{
+                            product.images.map((image, i) => (
+                                <div key={i} className={`w-8 h-8 rounded-full `} style={{
                                     backgroundColor: image.color
                                 }} />
                             ))
