@@ -1,10 +1,11 @@
 // components/SafeHtml.tsx
+'use client'
 import parse from 'html-react-parser';
+import DOMPurify from 'isomorphic-dompurify';
 
 type Props = { html: string };
 
-export default async function SafeHtml({ html }: Props) {
-    const DOMPurify = (await import('isomorphic-dompurify')).default;
+export default function SafeHtml({ html }: Props) {
     const clean = DOMPurify.sanitize(html, {
         ALLOWED_TAGS: ['ol', 'ul', 'li', 'b', 'strong', 'i', 'em', 'p', 'br', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'h7'],
         ALLOWED_ATTR: []
